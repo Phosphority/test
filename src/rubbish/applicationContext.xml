@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--静态工厂方法-->
+    <bean id = "myFactoryBean1" class = "com.itheima.factory.MyBeanFactory1" factory-method="userDao"/>
+<!--实例工厂方法-->
+    <bean id = "myFactoryBean2" class = "com.itheima.factory.MyBeanFactory2"/>
+    <bean id="userDao2" factory-bean="myFactoryBean2" factory-method="userDao"/>
+
+<!--    <bean id="userService" name="userService1,userService2" class="com.itheima.service.impl.UserServiceImpl" scope = "singleton" lazy-init="false" init-method="init" destroy-method="destroy">-->
+<!--        <constructor-arg name="name" value = "liming"/>-->
+<!--        <constructor-arg name="password" value="123456"/>-->
+<!--        <property name="userDao" ref = "userDao"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"/>-->
+</beans>
