@@ -23,8 +23,8 @@ public class ApplicationContextTest {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 //        UserService userServiceImpl =  applicationContext.getBean(UserServiceImpl.class);
 //        System.out.println(userService);
-        PersonDaoImpl personDao = (PersonDaoImpl)applicationContext.getBean("personDao");
-        System.out.println(personDao);
+         UserService userService = applicationContext.getBean("userService",UserService.class);
+         userService.show();
 //        UserDao userDao = (UserDaoImpl) applicationContext.getBean("myFactoryBean1");
 //        System.out.println(userDao);
 //        UserDao userDao = applicationContext.getBean("userDao",UserDaoImpl.class);

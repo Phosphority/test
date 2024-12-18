@@ -1,8 +1,6 @@
 package com.itheima.service.impl;
 
 import com.itheima.dao.UserDao;
-import com.itheima.dao.impl.UserDaoImpl;
-import com.itheima.service.UserService;
 
 public class Test {
 
