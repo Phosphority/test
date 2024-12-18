@@ -9,5 +9,4 @@ public class MyBeanFactory2 {
         System.out.println("这是在配置bean2所进行的操作");
         return new UserDaoImpl();
     }
-
 }

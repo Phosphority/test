@@ -4,6 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <import resource="classpath:test01.xml"/>
+    <bean class = "com.itheima.processor.MyBeanFactoryPostProcessor"/>
+    <bean class = "com.itheima.processor.MyBeanDefinitionRegistryFactoryPostProcessor"/>
 
 <bean id = "inputStream" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsFile">
     <constructor-arg name = "resource" value="mybatis-config.xml"/>
@@ -36,7 +38,7 @@
     <constructor-arg name="source" value="2004-12-13 12:23:33"/>
 </bean>
 
-<bean id = "userService" class="com.itheima.service.impl.UserServiceImpl" autowire="byName">
+<bean id = "userService" class="com.itheima.service.impl.UserServiceImpl" autowire="byName" lazy-init="true">
     <property name="stringList">
         <list>
             <value>aaa</value>
