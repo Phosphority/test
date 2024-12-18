@@ -3,29 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <import resource="classpath:test01.xml"/>-->
-<!--    <import resource="classpath:mybatis-spring-config.xml"/>-->
+    <import resource="classpath:test01.xml"/>
+    <import resource="classpath:mybatis-spring-config.xml"/>
 
 <!--使用spring配置myBatis-->
-    <bean id = "dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
-        <property name="username" value="root"/>
-        <property name="password" value="1911"/>
-    </bean>
-
-    <bean class ="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
-
-    <bean class = "org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.itheima.mapper"/>
-    </bean>
-
-    <bean class = "com.itheima.processor.MyBeanFactoryPostProcessor"/>
-    <bean class = "com.itheima.processor.MyBeanDefinitionRegistryFactoryPostProcessor"/>
-
-    <bean id = "userDao" class = "com.itheima.dao.impl.UserDaoImpl"/>
 
     <bean id = "userService" class="com.itheima.service.impl.UserServiceImpl">
         <property name="managerMapper" ref = "managerMapper"/>
