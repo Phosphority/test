@@ -6,7 +6,13 @@
     <import resource="classpath:test01.xml"/>
     <import resource="classpath:mybatis-spring-config.xml"/>
 
-<!--使用spring配置myBatis-->
+
+
+    <bean class = "com.itheima.processor.MyBeanFactoryPostProcessor"/>
+    <bean class = "com.itheima.processor.MyBeanDefinitionRegistryFactoryPostProcessor"/>
+
+    <bean id = "userDao" class = "com.itheima.dao.impl.UserDaoImpl"/>
+
 
     <bean id = "userService" class="com.itheima.service.impl.UserServiceImpl">
         <property name="managerMapper" ref = "managerMapper"/>

@@ -18,9 +18,4 @@
         <property name="basePackage" value="com.itheima.mapper"/>
     </bean>
 
-    <bean class = "com.itheima.processor.MyBeanFactoryPostProcessor"/>
-    <bean class = "com.itheima.processor.MyBeanDefinitionRegistryFactoryPostProcessor"/>
-
-    <bean id = "userDao" class = "com.itheima.dao.impl.UserDaoImpl"/>
-
 </beans>
