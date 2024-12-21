@@ -21,8 +21,8 @@ import javax.annotation.Resource;
 @Data
 public class CatalogServiceImpl implements CatalogService {
 
-    @Value("userDao")
-    UserDao userDao;
+//    @Value("userDao")
+//    UserDao userDao;
 
     @Autowired
     Catalog catalog;
@@ -46,7 +46,7 @@ public class CatalogServiceImpl implements CatalogService {
         return personDao;
     }
 
-    public UserDao getUserDao() {
-        return userDao;
-    }
+//    public UserDao getUserDao() {
+//        return userDao;
+//    }
 }

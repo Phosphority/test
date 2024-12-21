@@ -6,6 +6,8 @@ import com.itheima.mapper.ManagerMapper;
 import com.itheima.service.UserService;
 import lombok.Data;
 import org.apache.ibatis.type.Alias;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
@@ -27,7 +29,12 @@ import java.util.Set;
 //@Scope("prototype")
 public class UserServiceImpl implements UserService {
 
+//    @Autowired
+//    @Qualifier("managerMapper")
     private ManagerMapper managerMapper;
+    public void setManagerMapper(ManagerMapper managerMapper) {
+        this.managerMapper = managerMapper;
+    }
 
 //    public UserServiceImpl() {
 //        System.out.println("这是一个无参构造方法");
@@ -51,17 +58,22 @@ public class UserServiceImpl implements UserService {
         System.out.println("正在销毁....");
     }
 
+    @Autowired
     public List<UserDao> userDaoList;
 
+    @Value("EEEE")
     public List<String> stringList;
 
+    @Autowired
+    @Qualifier("userDao")
     public Set<UserDao> UserDaoSet;
 
+    @Value("WWW,EEE,RRR")
     public Set<String> stringSet;
 
-    public Map<Integer, UserDao> UserDaoMap;
-
-    public Properties properties;
+//    public Map<Integer, UserDao> UserDaoMap;
+//
+//    public Properties properties;
 //
     public void show(){
 
@@ -69,8 +81,8 @@ public class UserServiceImpl implements UserService {
         System.out.println(stringList);
         System.out.println(UserDaoSet);
         System.out.println(stringSet);
-        System.out.println(UserDaoMap);
-        System.out.println(properties);
+//        System.out.println(UserDaoMap);
+//        System.out.println(properties);
         List<Manager> managers = managerMapper.findAll();
         for(Manager manager:managers){
             System.out.println(manager);

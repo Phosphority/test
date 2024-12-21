@@ -17,48 +17,48 @@
 <!--    <bean id = "userDao" class = "com.itheima.dao.impl.UserDaoImpl"/>-->
 
 
-    <bean id = "userService" class="com.itheima.service.impl.UserServiceImpl">
-        <property name="managerMapper" ref = "managerMapper"/>
-        <property name="stringList">
-            <list>
-                <value>aaa</value>
-                <value>bbb</value>
-                <value>ccc</value>
-            </list>
-        </property>
-        <property name="userDaoList">
-            <list>
-                <bean id="userDao1" class="com.itheima.dao.impl.UserDaoImpl"/>
-                <bean id="userDao2" class="com.itheima.dao.impl.UserDaoImpl"/>
-                <ref bean="userDao"/>
-            </list>
-        </property>
-        <property name="stringSet">
-            <set>
-                <value>xxx</value>
-                <value>yyy</value>
-            </set>
-        </property>
-        <property name="userDaoSet">
-            <set>
-                <bean class="com.itheima.dao.impl.UserDaoImpl"/>
-                <bean class="com.itheima.dao.impl.UserDaoImpl"/>
-                <ref bean="userDao"/>
-            </set>
-        </property>
-        <property name="userDaoMap">
-            <map>
-                <entry key="11" value-ref="userDao"/>
-                <entry key="22" value-ref="userDao"/>
-            </map>
-        </property>
-        <property name="properties">
-            <props>
-                <prop key="1">ttt</prop>
-                <prop key="2">ccc</prop>
-            </props>
-        </property>
-    </bean>
+<!--    <bean id = "userService" class="com.itheima.service.impl.UserServiceImpl">-->
+<!--        <property name="managerMapper" ref = "managerMapper"/>-->
+<!--        <property name="stringList">-->
+<!--            <list>-->
+<!--                <value>aaa</value>-->
+<!--                <value>bbb</value>-->
+<!--                <value>ccc</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="userDaoList">-->
+<!--            <list>-->
+<!--                <bean id="userDao1" class="com.itheima.dao.impl.UserDaoImpl"/>-->
+<!--                <bean id="userDao2" class="com.itheima.dao.impl.UserDaoImpl"/>-->
+<!--                <ref bean="userDao"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="stringSet">-->
+<!--            <set>-->
+<!--                <value>xxx</value>-->
+<!--                <value>yyy</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="userDaoSet">-->
+<!--            <set>-->
+<!--                <bean class="com.itheima.dao.impl.UserDaoImpl"/>-->
+<!--                <bean class="com.itheima.dao.impl.UserDaoImpl"/>-->
+<!--                <ref bean="userDao"/>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="userDaoMap">-->
+<!--            <map>-->
+<!--                <entry key="11" value-ref="userDao"/>-->
+<!--                <entry key="22" value-ref="userDao"/>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="1">ttt</prop>-->
+<!--                <prop key="2">ccc</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
 
 
 
