@@ -3,23 +3,22 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/JQuery/jquery-3.7.1.js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/JQuery/jquery-3.7.1.js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/add.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/adv.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/book.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/cate.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/cateedit.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/column.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/css" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/images" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/index.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/info.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/js" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/list.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/login.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/page.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/pass.html" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/static/tips.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/JQuery/jquery-3.7.1.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/add.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/adv.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/book.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/cate.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/cateedit.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/column.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/images" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/index.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/info.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/login.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/page.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/pass.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/tips.html" charset="UTF-8" />
   </component>
 </project>

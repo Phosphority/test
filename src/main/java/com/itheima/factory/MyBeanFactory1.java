@@ -2,7 +2,9 @@ package com.itheima.factory;
 
 import com.itheima.dao.UserDao;
 import com.itheima.dao.impl.UserDaoImpl;
+import org.springframework.stereotype.Component;
 
+@Component("beanFactory1")
 public class MyBeanFactory1 {
 
     public static UserDao userDao(){
