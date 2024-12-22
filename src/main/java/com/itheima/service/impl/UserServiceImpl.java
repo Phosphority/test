@@ -29,18 +29,20 @@ import java.util.Set;
 //@Scope("prototype")
 public class UserServiceImpl implements UserService {
 
-//    @Autowired
+    //    @Autowired
 //    @Qualifier("managerMapper")
+    @Autowired
+    @Qualifier("managerMapper")
     private ManagerMapper managerMapper;
-    public void setManagerMapper(ManagerMapper managerMapper) {
-        this.managerMapper = managerMapper;
-    }
+//    public void setManagerMapper(ManagerMapper managerMapper) {
+//        this.managerMapper = managerMapper;
+//    }
 
 //    public UserServiceImpl() {
 //        System.out.println("这是一个无参构造方法");
 //    }
 
-//    public UserServiceImpl(String name) {
+    //    public UserServiceImpl(String name) {
 //        System.out.println("这是一个有参构造方法"+name);
 //    }
 //
@@ -49,12 +51,12 @@ public class UserServiceImpl implements UserService {
 //    }
 //
     @PostConstruct
-    public void init(){
+    public void init() {
         System.out.println("正在初始化....");
     }
 
     @PreDestroy
-    public void destroy(){
+    public void destroy() {
         System.out.println("正在销毁....");
     }
 
@@ -71,11 +73,8 @@ public class UserServiceImpl implements UserService {
     @Value("WWW,EEE,RRR")
     public Set<String> stringSet;
 
-//    public Map<Integer, UserDao> UserDaoMap;
-//
-//    public Properties properties;
-//
-    public void show(){
+    //
+    public void show() {
 
         System.out.println(userDaoList);
         System.out.println(stringList);
@@ -84,7 +83,7 @@ public class UserServiceImpl implements UserService {
 //        System.out.println(UserDaoMap);
 //        System.out.println(properties);
         List<Manager> managers = managerMapper.findAll();
-        for(Manager manager:managers){
+        for (Manager manager : managers) {
             System.out.println(manager);
         }
     }
@@ -94,8 +93,6 @@ public class UserServiceImpl implements UserService {
 //        System.out.println("属性设置完毕");
 //        this.userDao = userDao;
 //    }
-//
-//
 //
 //    @Override
 //    public void afterPropertiesSet() throws Exception {

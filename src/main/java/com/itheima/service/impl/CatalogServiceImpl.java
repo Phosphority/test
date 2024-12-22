@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -24,27 +25,28 @@ public class CatalogServiceImpl implements CatalogService {
 //    @Value("userDao")
 //    UserDao userDao;
 
-    @Autowired
-    Catalog catalog;
+//    @Autowired
+//    @Qualifier("catalog")
+//    Catalog catalog;
 
-    @Autowired
-    @Qualifier("manager")
-    Manager manager;
+//    @Autowired
+//    @Qualifier("manager")
+//    Manager manager;ii
+//
+//    @Resource(name="personDao")
+//    PersonDaoImpl personDao;
 
-    @Resource(name="personDao")
-    PersonDaoImpl personDao;
+//    public Catalog getCatalog() {
+//        return catalog;
+//    }
 
-    public Catalog getCatalog() {
-        return catalog;
-    }
-
-    public Manager getManager() {
-        return manager;
-    }
-
-    public PersonDaoImpl getPersonDao() {
-        return personDao;
-    }
+//    public Manager getManager() {
+//        return manager;
+//    }
+//
+//    public PersonDaoImpl getPersonDao() {
+//        return personDao;
+//    }
 
 //    public UserDao getUserDao() {
 //        return userDao;
